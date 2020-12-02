@@ -1,5 +1,5 @@
-ARG OWNCLOUD_VERSION=latest
-FROM owncloud/server:${OWNCLOUD_VERSION}
+ARG BUILD_FROM=owncloud/server:arm32v7
+FROM ${BUILD_FROM}
 
 # Copy root filesystem
 COPY rootfs /
