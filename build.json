@@ -1,0 +1,9 @@
+{
+  "build_from": {
+    "armhf" : "arm32v7/owncloud:10.0.10",
+    "armv7": "arm32v7/owncloud:10.0.10",
+    "aarch64": "arm64v8/owncloud:10.0.10",
+    "amd64" : "amd64/owncloud:10.0.10",
+    "i386" : "i386/owncloud:10.0.10"
+  }
+}

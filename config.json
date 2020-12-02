@@ -1,0 +1,40 @@
+{
+    "name": "ownCloud",
+    "version": "10.0.10",
+    "slug": "owncloud",
+    "description": "OwnCloud addon. Image based on upstream docker images. This is just a wrapper to pass environment variable to the container.",
+    "url": "https://github.com/apichlinski/hassio-addons/tree/master/owncloud",
+    "webui": "http://[HOST]:[PORT:80]",
+    "panel_icon": "mdi:cloud-sync",
+    "startup": "services",
+    "boot": "auto",
+    "ports": {
+        "80/tcp": null
+    },
+    "ports_description": {
+        "80/tcp": "Web interface"
+    },
+    "map": [
+        "share:rw"
+    ],
+    "options": {
+        "OWNCLOUD_DOMAIN=${OWNCLOUD_DOMAIN},
+        "OWNCLOUD_DB_TYPE": "mysql",
+        "OWNCLOUD_DB_NAME": "owncloud",
+        "OWNCLOUD_DB_USERNAME": "owncloud",
+        "OWNCLOUD_DB_PASSWORD": "owncloud",
+        "OWNCLOUD_DB_HOST": "db",
+        "OWNCLOUD_ADMIN_USERNAME": null,
+        "OWNCLOUD_ADMIN_PASSWORD": null,
+        "OWNCLOUD_MYSQL_UTF8MB4": true,
+        "OWNCLOUD_REDIS_ENABLED": true,
+        "OWNCLOUD_REDIS_HOST": "redis"
+    },
+    "schema": false,
+    "arch": [
+        "aarch64",
+        "amd64",
+        "armhf",
+        "i386"
+    ]
+}
