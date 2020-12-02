@@ -8,7 +8,7 @@ These add-ons can be installed in Home Assistant by [configuring the following U
 https://github.com/apichlinski/hassio-addons
 ```
 
-### [ownCloud](ownCloud)
+### [ownCloud](owncloud)
 
 A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms.
 
