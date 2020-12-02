@@ -1,4 +1,4 @@
-ARG OWNCLOUD_VERSION=10.5.0
+ARG OWNCLOUD_VERSION=latest
 FROM owncloud/server:${OWNCLOUD_VERSION}
 
 # Copy root filesystem

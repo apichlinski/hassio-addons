@@ -1,6 +1,7 @@
 {
   "build_from": {
-    "armv7": "owncloud/server:arm32v7",
+    "armhf": "owncloud/server:10.4.1-arm32v7",
+    "armv7": "owncloud/server:10.4.1-arm32v7",
     "aarch64": "owncloud/server:arm64v8",
     "amd64" : "owncloud/server:amd64"
   }
