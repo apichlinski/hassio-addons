@@ -31,10 +31,5 @@
       "OWNCLOUD_REDIS_HOST":"redis"
    },
    "schema":false,
-   "arch":[
-      "aarch64",
-      "amd64",
-      "armv7",
-      "armhf"
-   ]
+   "arch": ["armv7", "aarch64", "amd64", "i386"],
 }
