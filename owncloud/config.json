@@ -9,7 +9,7 @@
    "startup":"services",
    "boot":"auto",
    "ports":{
-      "80/tcp":null
+      "8080/tcp":null
    },
    "ports_description":{
       "8080/tcp":"Web interface"
