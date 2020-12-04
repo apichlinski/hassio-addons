@@ -20,7 +20,7 @@ RUN  #sed -i "s|/var/www|/share/owncloud|g" /etc/apache2/sites-enabled/000-defau
 # RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
 
 ENTRYPOINT [ "/usr/bin/run.sh" ]
-CMD ["apache2-foreground"]
+#CMD ["apache2-foreground"]
 
 # Build arguments
 ARG BUILD_ARCH
