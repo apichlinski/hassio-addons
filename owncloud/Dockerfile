@@ -11,14 +11,6 @@ RUN  apt-get update \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
 
-# Change the root folder for Nextcloud to the /share directory to be persistent
-RUN  #sed -i "s|/var/www|/share/owncloud|g" /etc/apache2/sites-enabled/000-default.conf \
-  && sed -i "s|/var/www|/share/owncloud|g" /etc/apache2/apache2.conf \
-  && sed -i "s|/var/www/html|/share/owncloud/html|g" /usr/bin/entrypoint \
-  && sed -i "s|/var/www/html|/share/owncloud/html|g" /usr/src/owncloud/config/autoconfig.php
-  
-# RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
-
 ENTRYPOINT [ "/usr/bin/run.sh" ]
 CMD ["/usr/bin/owncloud", "server"]
 
